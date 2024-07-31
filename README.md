@@ -13,3 +13,8 @@ In the robot's case:
 - "_System 2_" is activated when the robot detects an “obstacle”, to feed then its telemetry to Phi-3 model and decide where to turn.
 
 >Note: The maze itself was built in **Coppelia Robotics**’s simulation environment, while the compute power to run this demo was provided by **AMD**’s AI PC.
+
+### Simulation Environment
+
+### Demo YouTube Video
+You can find short demo of the working solution [here](https://youtu.be/bX2gU0sx1bE) on YouTube.
