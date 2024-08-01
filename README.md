@@ -84,7 +84,7 @@ _, distance_right, _, _, _ = sim.handleProximitySensor(proximitySensorHandleRigh
 phi3_recommendations = system2_logic(distance_left, distance_right)
 phi3_recommendations = extract_first_list(phi3_recommendations)
 ```
-9. Relevant speed instructions then will be send to left and right wheels to perform turning maneouvr.
+9. Relevant speed instructions then will be send to left and right wheels to perform turning manoeuvre.
 ```
 sim.setJointTargetVelocity(leftMotorHandle, left_wheel_speed)
 sim.setJointTargetVelocity(rightMotorHandle, right_wheel_speed)
