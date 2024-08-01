@@ -1,6 +1,6 @@
 # Navigating the maze with Phi-3-powered "System 2" logic
 
-### Project Overview
+### Project Overview:
 
 This repo demonstrates the use of Microsoft’s **Phi-3** SLM to power so-called “_System 2_” logic of Pioneer 3-DX mobile robot and navigate the maze.
 
@@ -14,7 +14,14 @@ In the robot's case:
 
 >Note: The maze itself was built in **Coppelia Robotics**’s simulation environment, while the compute power to run this demo was provided by **AMD**’s AI PC.
 
-### Simulation Environment
+### Simulation Environment:
+_Pioneer 3-DX_'s virtual robotic solution was provided by Coppelia Robotics in _CoppeliaSim_. Its default configuration was equipped with 4 additional sensors, used in this demo:
+- 1x Video camera;
+- 3x Proximity sensors.
 
-### Demo YouTube Video
+_CoppeliaSim_'s default 3D scene was also re-designed to build a maze, with internal and external walls made detectable to simulate real-time prximity sensing.
+
+### Solution Implementation:
+
+### Demo Video:
 You can find short demo of the working solution [here](https://youtu.be/bX2gU0sx1bE) on YouTube.
