@@ -18,7 +18,7 @@ _Pioneer 3-DX_'s virtual robotic solution was provided by Coppelia Robotics in _
 - 1x Video camera;
 - 3x Proximity sensors.
 
-_CoppeliaSim_'s default 3D scene was also re-designed to build a maze, with internal and external walls made detectable to simulate real-time prximity sensing.
+_CoppeliaSim_'s default 3D scene was also re-designed to build a maze, with internal and external walls made detectable to simulate real-time proximity sensing.
 
 ### Solution Implementation:
 1. Programmatic interactions with CoppeliaSim require installation of ZMQ Python package. We'll re-use its _RemoteAPIClient_ class.
@@ -48,7 +48,7 @@ def system2_logic(distance_left, distance_right):
 
     return response
 ```
-5. To address potential deviations in the model's completion from expected answer formar, additional Helper function is provided to use RegEx to extract speed values for the robot's actuators: left and right wheels:
+5. To handle potential inconsistencies between the model's output and the expected format, a Helper function is provided to use RegEx to extract speed values for the robot's actuators (left and right wheels):
 ``` Python
 def extract_first_list(data):
     # Join the list into a single string
