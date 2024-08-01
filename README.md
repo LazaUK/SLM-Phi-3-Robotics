@@ -21,7 +21,7 @@ _Pioneer 3-DX_'s virtual robotic solution was provided by Coppelia Robotics in _
 _CoppeliaSim_'s default 3D scene was also re-designed to build a maze, with internal and external walls made detectable to simulate real-time proximity sensing.
 
 ### Solution Implementation:
-1. Programmatic interactions with CoppeliaSim require installation of ZMQ Python package. We'll re-use its _RemoteAPIClient_ class.
+1. Programmatic interactions with CoppeliaSim require installation of ZMQ Python package. We'll re-use its _RemoteAPIClient_ class:
 ``` Python
 from coppeliasim_zmqremoteapi_client import RemoteAPIClient
 ```
@@ -84,7 +84,7 @@ _, distance_right, _, _, _ = sim.handleProximitySensor(proximitySensorHandleRigh
 phi3_recommendations = system2_logic(distance_left, distance_right)
 phi3_recommendations = extract_first_list(phi3_recommendations)
 ```
-9. Relevant speed instructions then will be send to left and right wheels to perform turning manoeuvre.
+9. Relevant speed instructions then will be send to left and right wheels to perform turning manoeuvre:
 ```
 sim.setJointTargetVelocity(leftMotorHandle, left_wheel_speed)
 sim.setJointTargetVelocity(rightMotorHandle, right_wheel_speed)
