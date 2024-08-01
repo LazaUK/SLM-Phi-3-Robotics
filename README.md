@@ -14,7 +14,7 @@ In the robot's case:
 >Note: The maze itself was built in **Coppelia Robotics**’s simulation environment, while the compute power to run this demo was provided by **AMD**’s AI PC.
 
 ### Simulation Environment:
-_Pioneer 3-DX_'s virtual robotic solution was provided by Coppelia Robotics in _CoppeliaSim_. Its default configuration was equipped with 4 additional sensors, used in this demo:
+_Pioneer 3-DX_'s virtual robotic solution was provided by Coppelia Robotics in _CoppeliaSim_. Its default configuration was enhanced with 4 additional sensors, used in this demo:
 - 1x Video camera;
 - 3x Proximity sensors.
 
